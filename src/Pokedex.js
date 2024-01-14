@@ -4,11 +4,17 @@ import Pokecard from './Pokecard';
 
 
 const Pokedex = ({pokemon}) => {
-    console.log(pokemon[0])
+    console.log(`length of pokemon is ${pokemon.length}`)
     return (
         <div>
-            <h1>Pokecards go here</h1>
-            {<Pokecard key={pokemon[0].id} id={pokemon[0].id} name={pokemon[0].name} type={pokemon[0].type} base_experience={pokemon[0].base_experience} />}
+            {pokemon.map(p => (
+                <Pokecard 
+                key={p.id} 
+                id={p.id} 
+                name={p.name} 
+                type={p.type} 
+                base_experience={p.base_experience} />
+            ))}
         </div>
     )
 }
