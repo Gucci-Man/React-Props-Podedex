@@ -1,15 +1,19 @@
 .Pokecard {
-    display: flex;
-    flex-direction: column; /* Arrange elements vertically */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 300px; /* Adjust height as needed */ /* Example for visual reference */
-    width: 150px;
-    background-color: rgb(192,192,192);
-    border-radius: 25px;
-}
-
-.Pokecard-name {
-    margin: auto;
+    display: inline-block;
+    width: 8em;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+  }
+  
+  .Pokecard-title {
     color: blue;
-}
+    font-weight: bold;
+  }
+  
+  .Pokecard-data {
+    font-size: 80%;
+  }
+  
